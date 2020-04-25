@@ -20,7 +20,9 @@ router.put('/',(req,res)=>{
         if (user.email === req.body.email || user.phoneNumber === req.body.phoneNumber){
             user.lName = req.body.lName;
             user.fName = req.body.fName;
+            user.email = req.body.email;
             user.status = req.body.status;
+            user.phoneNumber = req.body.phoneNumber
             return user;
         }
     });
