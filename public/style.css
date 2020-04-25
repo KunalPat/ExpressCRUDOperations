@@ -1,0 +1,89 @@
+
+body{
+    background: #f8f8f8
+}
+.error {
+color: red;
+}
+.marTop10{
+    margin-top: 10px;
+}
+.marLeft10{
+    margin-left: 10px;
+}
+.status {
+position: absolute;
+top: 10px;
+right: 10px;
+margin: 0;
+}
+.contactCard {
+position: relative;
+width: 30%;
+border: 1px solid #ccc;
+padding: .7%;
+margin: .2%;
+display: inline-block;
+background: #fff;
+border-radius: 2%;
+}
+.contactCard > p:not(:last-child){
+margin: 5px 0;
+word-break: break-all;
+width: 80%;
+}
+.contactCard .Button{
+    display: inline-block;
+}
+#output{
+width: 90%;
+margin: 0 auto;
+padding: 20px;
+}
+.FormElement{
+margin-bottom: 5px;
+}
+.FormElement > label{
+display: inline-block;
+width: 49%;
+text-align: right;
+margin-bottom: 10px;
+}
+.FormElement > div{
+display: inline-block;
+width: 50%;
+text-align: left;
+vertical-align: middle;
+}
+.FormElement > div input[type=text],
+.FormElement > div input[type=number]{
+width: 100%;
+height: 30px;
+}
+input:focus{
+outline-color: #1eb7e0;
+}
+input[type=button]{
+border-radius: 30px;
+font-size: 12px;
+text-transform: uppercase;
+color: #1eb7e0;
+border: 1px solid #1eb7e0;
+padding: 0.35rem 2rem !important;
+letter-spacing: .12em;
+-webkit-transition: background-color .25s ease;
+transition: background-color .25s ease;
+position: relative;
+}
+input[type=button]:focus{
+outline: none;
+}
+legend{
+font-weight: bold;
+font-size: 20px;
+text-align: center;
+margin-bottom: 10px;
+}
+fieldset{
+padding: 20px;
+}

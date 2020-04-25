@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Information</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Welcome To Contact Library</h1>
+        <form id="userData">
+            <legend>Contact Details :</legend>
+            <fieldset>
+                <div class="FormElement">
+                    <label>First Name :</label>
+                    <div>
+                        <input type="text" name="fName" value="" required/>
+                    </div>
+                </div>
+                <div class="FormElement">
+                    <label>Last Name :</label>
+                    <div>
+                        <input type="text" name="lName" value="" required/>
+                   </div> 
+                </div>
+                <div class="FormElement">
+                    <label>Email :</label>
+                    <div>
+                        <input type="text" name="email" value="" required/>
+                    </div>
+                </div>
+                <div class="FormElement">
+                    <label>Phone Number :</label>
+                    <div>
+                        <input type="number" name="phoneNumber" min="1000000000" max="9999999999" value="" required/>
+                    </div>
+                </div>
+                <div class="FormElement">
+                    <label>Status :</label>
+                    <div>
+                        <span><input type="radio" name="status" value="Active" id="Active" required/> Active</span>
+                        <span><input type="radio" name="status" value="InActive" id="InActive" required/>InActive</span>         
+                    </div>
+                </div>
+                <div class="FormElement">
+                    <label></label>
+                    <div>
+                        <input type="button" value="Add a Contact" onclick="SubmitData()"/> 
+                        <input type="button" value="Edit/Status Change" class="marLeft10" onclick="UpdateData()"/> 
+                        <input type="button" value="Delete" class="marLeft10" onclick="DeleteData()"/>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="marTop10">
+            <input type="button" value="List Contacts" class="marTop10" onclick="getList()"/>         
+        </div>
+        <div id="output"></div> 
+        
+        <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
